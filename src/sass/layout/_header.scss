@@ -1,3 +1,55 @@
 /* ********* */
 /* @HEADER */
 /* ********* */
+// HEADER
+header{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 500px;
+    grid-template-areas: 
+    "navegador"
+    "banner";
+}
+.navegador{
+    grid-area: navegador;
+}
+.banner{
+    grid-area: banner;
+}
+
+// MENU**************************
+// SMARTPHONE
+#menu-smartphone {
+    display:grid;
+    grid-template-columns: repeat (3,1fr);
+    grid-template-areas: "menu logo .";
+    input{
+        display:none;
+    }
+    .logo{
+        grid-area: logo;
+    }
+    .menuH{
+        grid-area:menu;
+    }
+}
+// DESKTOP
+
+#menu-desktop{
+    display:none;
+}
+@media only screen and (min-width:70rem){
+    // SMARTPHONE
+    #menu-smartphone{
+        display:none;
+    }
+    // DESKTOP
+    #menu-desktop{
+        display:flex;
+    }
+}
+// MENU**********************************
+.banner{
+    width:100vw;
+    // height:500px;
+}
