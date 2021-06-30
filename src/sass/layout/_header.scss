@@ -23,15 +23,31 @@ header{
     display:grid;
     grid-template-columns: repeat (3,1fr);
     grid-template-areas: "menu logo .";
-    input{
+    #activar{
         display:none;
     }
     .logo{
-        grid-area: logo;
+        grid-area:logo;
     }
     .menuH{
         grid-area:menu;
     }
+}
+.desplegable{
+    transform:translateX(-100vw);
+    display:grid;
+    background-color: map-get($colores, marron_mas_claro);
+    height: calc(100vh-48px);
+    padding: 3rem;
+    font-size: 1rem;
+    grid-template-rows: repeat ( auto-fit , 1fr );
+    justify-items: center;
+}
+
+#activar:checked ~ .desplegable {
+    transition: 1s;
+    transform:translateX(0vw);
+    // display:block;
 }
 // DESKTOP
 

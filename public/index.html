@@ -1,50 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
     <div class="contenedor">
-<!-- HEADER -->
-    <header>
+      <!-- HEADER -->
+      <header>
         <!-- navegador -->
         <div class="navegador">
-            <!-- menu smartphone -->
-            <nav id="menu-smartphone">
-                <img class="logo" src=".\assets\img\smartphone\logo.svg" alt="logo web cafe">
-                <input type="text">
-                <label for=""></label>
-                <img class="menuH" src=".\assets\img\smartphone\menu.svg" alt="icono menu">
-            </nav>
-            <ul class="desplegable">
-                <h1>CAFETERIA PALMA</h1>
-                <a href="">Nuestros cafés</a>
-                <a href="">Nuestros postres caseros</a>
-                <a href="">Saber más</a>
-                <a href="">El establecimiento en imágenes</a>
-            </ul>
-            <!-- menu desktop -->
-            <nav id="menu-desktop">
-                <a href="">Servicios</a>
-                <img src=".\assets\img\desktop\logo.svg" alt="logo web cafe">
-                <a href="">Tour</a>
-            </nav>
+          <!-- menu smartphone -->
+          <nav id="menu-smartphone">
+            <img
+              class="logo"
+              src=".\assets\img\smartphone\logo.svg"
+              alt="logo web cafe"
+            />
+            <input type="checkbox" id="activar" />
+            <label for="activar">
+              <img
+                class="menuH"
+                src=".\assets\img\smartphone\menu.svg"
+                alt="icono menu"
+              />
+            </label>
+          </nav>
+          <section class="desplegable">
+            <a href="#">CAFETERIA PALMA</a>
+            <a href="">Nuestros cafés</a>
+            <a href="">Nuestros postres caseros</a>
+            <a href="">Saber más</a>
+            <a href="">El establecimiento en imágenes</a>
+          </section>
+          <!-- menu desktop -->
+          <nav id="menu-desktop">
+            <a href="">Servicios</a>
+            <img src=".\assets\img\desktop\logo.svg" alt="logo web cafe" />
+            <a href="">Tour</a>
+          </nav>
         </div>
         <!-- banner -->
-        <div class="banner"></div>
-    </header>
-        <!-- MAIN -->
-    <main>
-    
-    </main>
-        <!-- FOOTER -->
-    <footer>
-            
-    </footer>
+        <div class="banner">
+          <section class="slider">
+            <!-- slider 1-->
+            <picture class="slide">
+              <!-- smartphone -->
+              <source
+                srcset="
+                  .\assets\img\smartphone\slider1.jpg,
+                  .\assets\img\smartphone\slider1@2x.jpg,
+                  .\assets\img\smartphone\slider1@3x.jpg
+                "
+                media="(min-width:20em) and (orientation:portrait)"
+              />
+              <!-- desktop -->
+              <source
+                srcset="
+                  .\assets\img\smartphone\slider1.jpg,
+                  .\assets\img\smartphone\slider1@2x.jpg
+                "
+                media="(min-width:60em)"
+              />
+              <img src="" alt="tazaGranosCafe_Slider" />
+            </picture>
+            <!-- slider 2-->
+            <picture class="slide">
+              <!-- smartphone -->
+              <source
+                srcset="
+                  .\assets\img\smartphone\slider2.jpg,
+                  .\assets\img\smartphone\slider2@2x.jpg,
+                  .\assets\img\smartphone\slider2@3x.jpg
+                "
+                media="(min-width:20em) and (orientation:portrait)"
+              />
+              <!-- desktop -->
+              <source
+                srcset="
+                  .\assets\img\smartphone\slider2.jpg,
+                  .\assets\img\smartphone\slider2@2x.jpg
+                "
+                media="(min-width:60em)"
+              />
+              <img src="" alt="Postre_Slider" />
+            </picture>
+            <!-- slider 3-->
+            <picture class="slide">
+              <!-- smartphone -->
+              <source
+                srcset="
+                  .\assets\img\smartphone\slider3.jpg,
+                  .\assets\img\smartphone\slider3@2x.jpg,
+                  .\assets\img\smartphone\slider3@3x.jpg
+                "
+                media="(min-width:20em) and (orientation:portrait)"
+              />
+              <!-- desktop -->
+              <source
+                srcset="
+                  .\assets\img\smartphone\slider3.jpg,
+                  .\assets\img\smartphone\slider3@2x.jpg
+                "
+                media="(min-width:60em)"
+              />
+              <img src="" alt="dibujoCafeEspuma_Slider" />
+            </picture>
+          </section>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main></main>
+      <!-- FOOTER -->
+      <footer></footer>
     </div>
-</body>
+  </body>
 </html>
